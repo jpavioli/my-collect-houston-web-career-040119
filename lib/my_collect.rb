@@ -14,5 +14,5 @@ def my_collect(collection)
   new_collection
 end
 
-my_each(1) {|i| "#{i}"}
+my_each(1) {|i| "#{i.split("").first"}
 
