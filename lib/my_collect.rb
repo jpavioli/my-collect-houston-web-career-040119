@@ -6,8 +6,7 @@ def my_collect(collection)
   else 
     collection_count = collection.size  
     while counter < collection_count
-      yield collection[counter]
-      new_collection << collection[counter]
+      new_collection << yield collection[counter]
       counter += 1
     end
   end
